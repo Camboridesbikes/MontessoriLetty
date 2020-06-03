@@ -70,7 +70,7 @@ return(
     <Img style={{width:`100%`, height: `12em`}} fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}
       objectFit={'cover'} objectPosition="50% 25%"></Img>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', }}>
+      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)` }}>
       <div className='wg pg hg tc white'>
         <h1>Online Mentoring and Coaching</h1>
       </div>
@@ -101,7 +101,7 @@ return(
     <Img style={{width:`100%`, height: `12em`}} fluid={data.SchoolLeadership.childImageSharp.fluid}
       objectFit={'cover'} objectPosition="50% 25%"></Img>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center',}}>
+      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .2)`}}>
       <div className='wg pg hg tc white'>
         <h1>School Leadership Consultation</h1>
       </div>
@@ -132,7 +132,7 @@ return(
     <Img style={{width:`100%`, height: `12em`}} fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}
       objectFit={'cover'} objectPosition="50% 25%"></Img>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', }}>
+      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
       <div className='wg pg hg tc white'>
         <h1>Professional Development Workshops</h1>
       </div>
@@ -163,7 +163,7 @@ return(
     <Img style={{width:`100%`, height: `12em`}} fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}
       objectFit={'cover'} objectPosition="50% 25%"></Img>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', }}>
+      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
       <div className='wg pg hg tc white'>
         <h1>Parent Coaching and Training</h1>
       </div>

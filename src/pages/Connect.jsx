@@ -32,7 +32,7 @@ return(
     <SEO title="Connect with us" />
     <div className='tc' style={{width: `100%`, position: `relative`}}>
     <Img style={{width:`100%`, height: `90%`}} fluid={data.Background.childImageSharp.fluid} objectFit={'cover'} objectPosition="50% 50%"></Img>
-      <div className='tc pg' style={{position: `absolute`, backgroundColor: `#00000070`, textAlign: `center`, top: `0`, left: ``, height: `80%`, width: `61.8%`}}>
+      <div className='tc pg' style={{position: `absolute`, backgroundColor: `#00000070`, textAlign: `center`, top: `0`, left: `19.1%`, height: `80%`, width: `61.8%`}}>
         <div style={{padding: `5%`, color: `white`}}>
           <h3>Connect With Us</h3>
           
