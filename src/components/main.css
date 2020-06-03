@@ -1,0 +1,141 @@
+.picCard{
+    margin: 2em;
+    width: 33%;
+    position: relative;
+    
+}
+
+div.picCard div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+    background-color: #00000035;
+    transition-duration: 1s;
+    transition: font-size 0s liner 1s, background-color 1s, scale 1s linear;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    
+    /* width: fit-content; */
+}
+
+div.picCard  div p{ 
+    height: 0;
+    scale: 0; 
+    /* visibility: collapse; */
+    opacity: 0;
+    transition: visibility 0s, opacity 1s, height 1s, scale .1s ease-out;
+    
+
+}
+div.picCard div .title{
+    font-size: 2em;
+}
+
+div.picCard  div p{
+    transition-duration: 2s;
+}
+
+div.picCard div:hover{
+    background-color: #00000070;
+}
+div.picCard div:hover p{
+   /* visibility: visible; */
+   height: 1;
+   scale: 1;
+   opacity: 1;
+   height: auto;   
+}
+/* div.picCard div:hover .title{
+    font-size: 2em;    
+} */
+
+button{
+    background-color: #A7E084;
+    border-radius: 5%;
+    border-style: none;
+    padding: 1% 6.81%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+footer div{
+    background-color: black;
+    width: 100%;
+    height:11em;
+    color: white;
+    display: flex;
+    padding: 1%;
+}
+
+footer div div{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+form span input{
+    margin: 4px;
+}
+/******/
+
+/* CUSTOM STYLES */
+
+/* Text */
+.tc{
+    text-align: center;
+}
+
+.tp{
+    text-align: start;
+    text-indent: 2em;
+}
+
+/* Padding */
+.pg{
+    padding: 6.18%;
+}
+
+.phg{
+    padding-left: 6.18%;
+    padding-right: 6.18%;
+}
+.pvg{
+    padding-top: 6.18%;
+    padding-bottom: 6.18%;
+}
+.ptg{
+    padding-top: 6.18%;
+}
+.pt3{
+    padding-top: 3.09%;
+}
+/* Width */
+.wg{
+    width: 61.8%;
+}
+
+.w100{
+    width: 100%;
+}
+
+/* Height */
+.hg{
+    height: 61.8%;
+}
+
+/* color */
+.white{
+    color: white;
+}
+/* *** */
+
+
