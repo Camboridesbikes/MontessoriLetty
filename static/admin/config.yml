@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: Camboridesbikes/MontessoriLetty
+
+media_folder: static/assets
+public_folder: assets
+
+collections: 
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - {label: Splash Text, name: splashText, widget: text}
+          - {label: Who We Are Text, name: whoText, widget: text}
+          - {label: Online Mentoring and Coaching Card Text, name: card1Text, widget: text}
+          - {label: School Leadership Consultation Card Text, name: card2Text, widget: text}
+          - {label: Professional Development Workshops Card Text, name: card3Text, widget: text}
+          - {label: Parent Coaching and Training Card Text, name: card4Text, widget: text}
+

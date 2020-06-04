@@ -51,12 +51,24 @@ const Layout = ({ children }) => {
             </div>
             <div style={{width: `45%`}}>
               <h4 >Sign Up For Newsletter</h4>
-              <form style={{marginBottom: 0}} action="">
+              <form name="newsletter" method="POST" data-netlify-true="true"  netlify-honeypot="bot-field">
+            <p style={{display: `none`}}>
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+             </p>
+            <span>
+              <label htmlFor="name">Name: <input type="text" name='name'/></label>
+              <label htmlFor="email">Email: <input type="email" name='email'/></label>
+            </span> 
+            <span><label htmlFor="why">Why: <td/><input type="text" name='why'/></label></span>
+            <button style={{marginLeft: `4em`}} type="submit">Submit</button>
+            </form>
+              {/* <form style={{marginBottom: 0}} action="">
                 <span><label htmlFor="name">Name</label><input type="text" name="Name" id="name"/></span><br/>
                 <span><label htmlFor="email">Email</label><input type="email" name="" id=""/></span><br/>
-                {/* <span><label htmlFor="why">Why</label><input type="text" name="Why" id="why" /> <br/> */}
+                {/* <span><label htmlFor="why">Why</label><input type="text" name="Why" id="why" /> <br/> 
                 <span><input type="submit" value="Submit"/></span>
-              </form>
+              </form> */}
+
             </div>
           </div>
         </footer>
