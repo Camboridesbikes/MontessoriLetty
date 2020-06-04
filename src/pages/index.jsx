@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 
 import Img from "gatsby-image/withIEPolyfill"
+
 export const sharpImage = graphql`
 fragment sharpImage on File {
 childImageSharp{
@@ -23,6 +24,22 @@ srcSet
 const IndexPage = () => {
 const data = useStaticQuery(graphql`
 query {
+  allFile(filter: {sourceInstanceName: {eq: "content"}, name: {eq: "home"}}) {
+    edges {
+      node {
+        childMarkdownRemark {
+          frontmatter {
+            whoText
+            card1Text
+            card2Text
+            card3Text
+            card4Text
+            splashText
+          }
+        }
+      }
+    }
+  }
 splash: file(relativePath: {eq: "splashImage.jpg"}) {
 ...sharpImage
 }
@@ -41,21 +58,11 @@ card3: file(relativePath: {eq: "profDevWorkshops.jpg"}) {
 card4: file(relativePath: {eq: "parentCoaching.jpg"}) {
 ...sharpImage
 }
-allFile(filter: {sourceInstanceName: {eq: "content"}, name: {eq: "home"}}) {
-  edges{
-  node {
-    childMarkdownRemark {
-      frontmatter {
-        title
-      }
-    }
-  }
-}
-}
+
 }
 `);
 
-
+const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter;
 
 return(
 <>
@@ -68,8 +75,7 @@ return(
     <div
       style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, flexDirection: `row-reverse`, backgroundColor: `#00000022`}}>
       <div style={{width: `50%`, color: `white`, textAlign: `center`, padding: `2rem`}}>
-        <p style={{fontSize: '1.8em'}}>Some Text here that conveys a message or a mission or a driving idea behind the
-          way you do or a hook</p>
+        <p style={{fontSize: '1.8em'}}>{content.splashText}</p>
         <button>
           <Link to='/Connect'>Connect with us</Link></button>
       </div>
@@ -91,11 +97,7 @@ return(
       style={{position: `absolute`, backgroundColor: `#00000075`, textAlign: `center`, top: `0`, left: `10%`, height: `90%`, width: `80%`, padding: `auto`}}>
       <div style={{padding: `5%`, color: `white`}}>
         <h3>Who We Are</h3>
-        <p style={{fontSize: '1.5em', lineHeight: `1.5em`}}>Our crew of Montessori experts includes seasoned teachers and administrators who
-          have AMI, AMS, or MACTE training with years of classroom, homeschool, and/or school leadership experience. Our
-          consultants are skilled mentors who collaborate with parents, teachers, and school administrators in
-          reflecting on practices in both home and school settings, and identifying goals to support a robust and
-          engaged learning environment.</p>
+        <p style={{fontSize: '1.5em', lineHeight: `1.5em`}}>{content.whoText}</p>
         <button>
           <Link to='/WhoWeAre'>Learn More</Link></button>
       </div>
@@ -111,8 +113,7 @@ return(
         <Link to="/WhatWeDo">
         <div>
           <h1 className='title'>Online Mentoring and Coaching</h1>
-          <p>Personalized online mentoring on topics such as: lesson implementation, classroom management, and effective
-            communication with children and parents.</p>
+<p>{content.card1Text}</p>
         </div>
         </Link>
 
@@ -123,8 +124,7 @@ return(
         <Link to="/WhatWeDo">
         <div>
           <h1 className='title'>School Leadership Consultation</h1>
-          <p>Personalized online mentoring on topics such as: lesson implementation, classroom management, and effective
-            communication with children and parents.</p>
+          <p>{content.card2Text}</p>
         </div>
         </Link>
 
@@ -135,8 +135,7 @@ return(
         <Link to="/WhatWeDo">
         <div>
           <h1 className='title'>School Leadership Consultation</h1>
-          <p>Personalized online mentoring on topics such as: lesson implementation, classroom management, and effective
-            communication with children and parents.</p>
+          <p>{content.card3Text}</p>
         </div>
         </Link>
       </div>
@@ -148,8 +147,7 @@ return(
         <Link to="/WhatWeDo">
         <div>
           <h1 className='title'>School Leadership Consultation</h1>
-          <p>Personalized online mentoring on topics such as: lesson implementation, classroom management, and effective
-            communication with children and parents.</p>
+          <p>{content.card4Text}</p>
         </div>
         </Link>
 
