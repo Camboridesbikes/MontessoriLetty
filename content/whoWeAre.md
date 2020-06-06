@@ -1,0 +1,6 @@
+---
+splashTitle: ""
+splashText: ""
+whoText: ""
+links: ""
+---

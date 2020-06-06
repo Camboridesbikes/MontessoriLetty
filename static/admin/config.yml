@@ -11,7 +11,7 @@ collections:
     preview_path: /
     files:
       - label: "Home Page"
-        name: "home"
+        name: "Home"
         file: "content/home.md"
         fields:
           - {label: Splash Text, name: splashText, widget: text}
@@ -20,4 +20,22 @@ collections:
           - {label: School Leadership Consultation Card Text, name: card2Text, widget: text}
           - {label: Professional Development Workshops Card Text, name: card3Text, widget: text}
           - {label: Parent Coaching and Training Card Text, name: card4Text, widget: text}
+      - label: "Who We Are Page"
+        name: "whoWeAre"
+        file: "content/whoWeAre.md"
+        fields:
+          - {label: Splash Title, name: splashTitle, widget: text}
+          - {label: Splash Text, name: splashText, widget: text}
+          - {label: Who We Are Text, name: whoText, widget: markdown}
+          - {label: Links, name: links, widget: markdown}
+      - label: "What We Do Page"
+        name: "whatWeDo"
+        file: "content/whatWeDo.md"
+        fields:
+          - {label: What We Do Text, name: whatWeDoText, widget: markdown}
+          - {label: Online Mentoring/Coaching, name: mentorCoachText, widget: markdown}
+          - {label: School Leadership Consultation, name: schoolLeadershipText, widget: markdown}
+          - {label: Professional Development Workshops, name: profDevText, widget: markdown}
+          - {label: Parent Coaching and Training, name: parentCoachText, widget: markdown}
+            
 
