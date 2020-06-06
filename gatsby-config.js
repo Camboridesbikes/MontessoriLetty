@@ -13,7 +13,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
