@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   # repo: Camboridesbikes/MontessoriLetty
-   branch: master
-   commit_messages:
+  branch: master
+  commit_messages:
     update: 'Update {{collection}} “{{slug}}”'
 
 media_folder: static/assets
