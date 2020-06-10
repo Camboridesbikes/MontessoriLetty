@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  # repo: Camboridesbikes/MontessoriLetty
+  repo: Camboridesbikes/MontessoriLetty
   branch: master
   commit_messages:
     update: 'Update {{collection}} “{{slug}}”'
