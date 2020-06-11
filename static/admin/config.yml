@@ -3,6 +3,7 @@ backend:
   repo: Camboridesbikes/MontessoriLetty
   branch: master
   publish_mode: editorial_workflow
+  site_url: https://thirsty-sinoussi-4c0cf1.netlify.app/
   commit_messages:
     update: 'Update {{collection}} “{{slug}}”'
 

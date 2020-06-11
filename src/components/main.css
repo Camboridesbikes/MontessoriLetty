@@ -1,11 +1,11 @@
-.picCard{
+.picCard {
     margin: 2em;
     width: 33%;
     position: relative;
-    
+
 }
 
-div.picCard div{
+div.picCard div {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -19,47 +19,50 @@ div.picCard div{
     align-content: center;
     justify-content: center;
 
-    
+
     /* width: fit-content; */
 }
 
-div.picCard  div p{ 
+div.picCard div p {
     height: 0;
-    scale: 0; 
+    scale: 0;
     visibility: collapse;
     opacity: 0;
-    transition:  opacity .5s, height .0s ease-out;
-    
+    transition: opacity .5s, height .0s ease-out;
+
 
 }
-div.picCard div .title{
+
+div.picCard div .title {
     font-size: 2.5em;
     padding-left: 5%;
     padding-right: 5%;
     transition: font-size .3s, linear;
 }
 
-div.picCard div:hover{
+div.picCard div:hover {
     background-color: #00000080;
 }
-div.picCard div:hover p{
-   visibility: visible;
-   height: 1;
-   scale: 1;
-   opacity: 1;
-   height: auto;   
+
+div.picCard div:hover p {
+    visibility: visible;
+    height: 1;
+    scale: 1;
+    opacity: 1;
+    height: auto;
 }
-div.picCard div:hover .title{    
+
+div.picCard div:hover .title {
     font-size: 1.75em;
     padding-left: 20%;
     padding-right: 20%;
- }
- 
+}
+
 /* div.picCard div:hover .title{
     font-size: 2em;    
 } */
 
-button{
+button {
     background-color: #A7E084;
     border-radius: 5%;
     border-style: none;
@@ -67,23 +70,27 @@ button{
     margin: .618em;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-input[type=checkbox]{
-    -ms-transform: scale(2); /* IE */
-  -moz-transform: scale(2); /* FF */
-  -webkit-transform: scale(2); /* Safari and Chrome */
-  -o-transform: scale(2); /* Opera */
-  transform: scale(2);
-  margin: .5em;
+input[type=checkbox] {
+    -ms-transform: scale(2);
+    /* IE */
+    -moz-transform: scale(2);
+    /* FF */
+    -webkit-transform: scale(2);
+    /* Safari and Chrome */
+    -o-transform: scale(2);
+    /* Opera */
+    transform: scale(2);
+    margin: .5em;
 }
 
 
 /* FOOTER */
-footer div{
+footer div {
     background-color: black;
     width: 100%;
     height: fit-content;
@@ -92,71 +99,75 @@ footer div{
     padding: 1%;
 }
 
-footer div div{
+footer div div {
     height: fit-content;
     display: flex;
     flex-direction: column;
 }
 
-form span input{
+form input {
     margin: 4px;
 }
+
 /******/
 
 /* CUSTOM STYLES */
 
 /* Text */
-.tc{
+.tc {
     text-align: center;
 }
 
-.tp{
+.tp {
     text-align: start;
     text-indent: 2em;
 }
 
 /* Padding */
-.pg{
+.pg {
     padding: 6.18%;
 }
 
-.phg{
+.phg {
     padding-left: 6.18%;
     padding-right: 6.18%;
 }
-.pvg{
+
+.pvg {
     padding-top: 6.18%;
     padding-bottom: 6.18%;
 }
-.ptg{
+
+.ptg {
     padding-top: 6.18%;
 }
-.pt3{
+
+.pt3 {
     padding-top: 3.09%;
 }
+
 /* Width */
-.wg{
+.wg {
     width: 61.8%;
 }
 
-.w100{
+.w100 {
     width: 100%;
 }
 
 /* Height */
-.hg{
+.hg {
     height: 61.8%;
 }
 
 /* color */
-.white{
+.white {
     color: white;
 }
 
-.mha{
+.mha {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* *** */
-
-
