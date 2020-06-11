@@ -11,7 +11,7 @@ public_folder: assets
 collections: 
   - label: "Pages"
     name: "pages"
-    preview_path: /
+    preview_path: https://thirsty-sinoussi-4c0cf1.netlify.app/
     files:
       - label: "Home Page"
         name: "Home"

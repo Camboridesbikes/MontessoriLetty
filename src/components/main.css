@@ -26,30 +26,35 @@ div.picCard div{
 div.picCard  div p{ 
     height: 0;
     scale: 0; 
-    /* visibility: collapse; */
+    visibility: collapse;
     opacity: 0;
-    transition: visibility 0s, opacity 1s, height 1s, scale .1s ease-out;
+    transition:  opacity .5s, height .0s ease-out;
     
 
 }
 div.picCard div .title{
-    font-size: 2em;
-}
-
-div.picCard  div p{
-    transition-duration: 2s;
+    font-size: 2.5em;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: font-size .3s, linear;
 }
 
 div.picCard div:hover{
-    background-color: #00000070;
+    background-color: #00000080;
 }
 div.picCard div:hover p{
-   /* visibility: visible; */
+   visibility: visible;
    height: 1;
    scale: 1;
    opacity: 1;
    height: auto;   
 }
+div.picCard div:hover .title{    
+    font-size: 1.75em;
+    padding-left: 20%;
+    padding-right: 20%;
+ }
+ 
 /* div.picCard div:hover .title{
     font-size: 2em;    
 } */
@@ -81,7 +86,7 @@ input[type=checkbox]{
 footer div{
     background-color: black;
     width: 100%;
-    height:14em;
+    height: fit-content;
     color: white;
     display: flex;
     padding: 1%;

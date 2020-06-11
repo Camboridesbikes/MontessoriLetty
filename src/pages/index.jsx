@@ -146,7 +146,7 @@ return(
         <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card4.childImageSharp.fluid} objectFit={'cover'} />
         <Link to="/WhatWeDo">
         <div>
-          <h1 className='title'>Parent Coaching and Training</h1>
+          <h1 className='title mha'>Parent Coaching and Training</h1>
           <p>{content.card4Text}</p>
         </div>
         </Link>
