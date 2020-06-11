@@ -1,7 +1,7 @@
 ---
-whatWeDoText: ""
-mentorCoachText: ""
-schoolLeadershipText: ""
-profDevText: ""
-parentCoachText: ""
+whatWeDoText: "Sections have the tendency to get rutted out. Small tree down between bottom of trail and bridge crossing. Pretty dry and fast. This trail is now a designated one way from the Lee's Train/C$ intersection. The trail ends with some nice berms at the bottom"
+mentorCoachText: "Sections have the tendency to get rutted out. Small tree down between bottom of trail and bridge crossing. Pretty dry and fast. This trail is now a designated one way from the Lee's Train/C$ intersection. The trail ends with some nice berms at the bottom"
+schoolLeadershipText: "Sections have the tendency to get rutted out. Small tree down between bottom of trail and bridge crossing. Pretty dry and fast. This trail is now a designated one way from the Lee's Train/C$ intersection. The trail ends with some nice berms at the bottom"
+profDevText: "Sections have the tendency to get rutted out. Small tree down between bottom of trail and bridge crossing. Pretty dry and fast. This trail is now a designated one way from the Lee's Train/C$ intersection. The trail ends with some nice berms at the bottom"
+parentCoachText: "Sections have the tendency to get rutted out. Small tree down between bottom of trail and bridge crossing. Pretty dry and fast. This trail is now a designated one way from the Lee's Train/C$ intersection. The trail ends with some nice berms at the bottom"
 ---
