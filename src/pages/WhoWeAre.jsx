@@ -64,8 +64,14 @@ return(
     <div className='phg tp'>
       <p>{content.whoText}</p>
     </div>
-    <hr className="wg mha"/>
-    <div>
+    
+   
+
+  </div>
+  <hr className="wg mha"/>
+  <div className="tc pg">
+    <h2 style={{padding: '.5em'}}>Collaborations & Other Projects</h2>
+    <div className='phg tp'>
       <p>{content.links}</p>
     </div>
 

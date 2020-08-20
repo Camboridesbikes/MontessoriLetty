@@ -65,7 +65,7 @@ return(
       <div className='phg pt3 hg tc white'>
         <h1>What We Do</h1>
         <h3 className='w100' style={{fontSize: `1.2em`, lineHeight: '1.5em'}}>
-          {content.whatWeDo}
+          {content.whatWeDoText}
         </h3>
       </div>
     </div>
@@ -82,7 +82,7 @@ return(
       objectFit={'cover'} objectPosition="50% 25%"></Img>
     <div
       style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)` }}>
-      <div className='wg pg hg tc white'>
+      <div id='whatWeDo_1' className='wg pg hg tc white'>
         <h1>Online Mentoring and Coaching</h1>
       </div>
     </div>
@@ -90,19 +90,8 @@ return(
   <div className="tc pg">
     <div className='phg tp'>
       <p>
-        Fast and flowing with big jump options and some pretty crazy gap jumps. The flowiest trails of the mountain!
-        Rocks for texture, obstacles for fun and some short fast downhils in this 2. Proper sized jumps, berms, rollers
-        and wooden features, so sick! Drop in off a shallow rock slab and then whip through a few tight berms.
-        <br /><br />
-        The flowiest trails of the mountain! A super fun freeride trail starting with the Pinkbike drop, an impressive
-        12' by 12' drop followed non stop features with lots of speed and perfect flow. There is an optional drop 1/2
-        way down. As the valley begins to close, the route transitions to a section of open forest. It is typically
-        maintained at a high level due to its popularity and use.
+       {content.mentorCoachText}
       </p>
-      <div className='tc'>
-        <button>
-          <Link to='/Connect'>schedule <br /> consultation</Link></button>
-      </div>
 
     </div>
 
@@ -114,7 +103,7 @@ return(
       objectPosition="50% 25%"></Img>
     <div
       style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .2)`}}>
-      <div className='wg pg hg tc white'>
+      <div id='whatWeDo_1' className='wg pg hg tc white'>
         <h1>School Leadership Consultation</h1>
       </div>
     </div>
@@ -122,19 +111,8 @@ return(
   <div className="tc pg">
     <div className='phg tp'>
       <p>
-        Fast and flowing with big jump options and some pretty crazy gap jumps. The flowiest trails of the mountain!
-        Rocks for texture, obstacles for fun and some short fast downhils in this 2. Proper sized jumps, berms, rollers
-        and wooden features, so sick! Drop in off a shallow rock slab and then whip through a few tight berms.
-        <br /><br />
-        The flowiest trails of the mountain! A super fun freeride trail starting with the Pinkbike drop, an impressive
-        12' by 12' drop followed non stop features with lots of speed and perfect flow. There is an optional drop 1/2
-        way down. As the valley begins to close, the route transitions to a section of open forest. It is typically
-        maintained at a high level due to its popularity and use.
+        {content.mentorCoachText}
       </p>
-      <div className='tc'>
-        <button>
-          <Link to='/Connect'>Schedule A Consultation</Link></button>
-      </div>
 
     </div>
 
@@ -146,7 +124,7 @@ return(
       objectFit={'cover'} objectPosition="50% 25%"></Img>
     <div
       style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
-      <div className='wg pg hg tc white'>
+      <div id='whatWeDo_1' className='wg pg hg tc white'>
         <h1>Professional Development Workshops</h1>
       </div>
     </div>
@@ -154,19 +132,8 @@ return(
   <div className="tc pg">
     <div className='phg tp'>
       <p>
-        Fast and flowing with big jump options and some pretty crazy gap jumps. The flowiest trails of the mountain!
-        Rocks for texture, obstacles for fun and some short fast downhils in this 2. Proper sized jumps, berms, rollers
-        and wooden features, so sick! Drop in off a shallow rock slab and then whip through a few tight berms.
-        <br /><br />
-        The flowiest trails of the mountain! A super fun freeride trail starting with the Pinkbike drop, an impressive
-        12' by 12' drop followed non stop features with lots of speed and perfect flow. There is an optional drop 1/2
-        way down. As the valley begins to close, the route transitions to a section of open forest. It is typically
-        maintained at a high level due to its popularity and use.
+        {content.profDevText}
       </p>
-      <div className='tc'>
-        <button>
-          <Link to='/Connect'>Schedule A Consultation</Link></button>
-      </div>
 
     </div>
 
@@ -178,7 +145,7 @@ return(
       objectFit={'cover'} objectPosition="50% 25%"></Img>
     <div
       style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
-      <div className='wg pg hg tc white'>
+      <div id='whatWeDo_1' className='wg pg hg tc white'>
         <h1>Parent Coaching and Training</h1>
       </div>
     </div>
@@ -186,21 +153,15 @@ return(
   <div className="tc pg">
     <div className='phg tp'>
       <p>
-        Fast and flowing with big jump options and some pretty crazy gap jumps. The flowiest trails of the mountain!
-        Rocks for texture, obstacles for fun and some short fast downhils in this 2. Proper sized jumps, berms, rollers
-        and wooden features, so sick! Drop in off a shallow rock slab and then whip through a few tight berms.
-        <br /><br />
-        The flowiest trails of the mountain! A super fun freeride trail starting with the Pinkbike drop, an impressive
-        12' by 12' drop followed non stop features with lots of speed and perfect flow. There is an optional drop 1/2
-        way down. As the valley begins to close, the route transitions to a section of open forest. It is typically
-        maintained at a high level due to its popularity and use.
+       {content.parentCoachText}
       </p>
-      <div className='tc'>
+    </div>
+    
+    <div className='tc'>
+      <br/><hr/><br/>
         <button>
           <Link to='/Connect'>Schedule A Consultation</Link></button>
       </div>
-
-    </div>
 
   </div>
 </>

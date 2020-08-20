@@ -75,7 +75,9 @@ return(
     <div
       style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, flexDirection: `row-reverse`, backgroundColor: `#00000022`}}>
       <div style={{width: `50%`, color: `white`, textAlign: `center`, padding: `2rem`}}>
-        <p style={{fontSize: '1.8em'}}>{content.splashText}</p>
+        <p style={{fontSize: '1.8em'}}>
+          {content.splashText}
+          </p>
         <button>
           <Link to='/Connect'>Connect with us</Link></button>
       </div>
@@ -110,10 +112,9 @@ return(
 
       <div className="picCard ">
         <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card1.childImageSharp.fluid} objectFit={'cover'} />
-        <Link to="/WhatWeDo">
+        <Link to="/WhatWeDo#whatWeDo_1">
         <div>
           <h1 className='title'>Online Mentoring and Coaching</h1>
-<p>{content.card1Text}</p>
         </div>
         </Link>
 
@@ -121,10 +122,9 @@ return(
 
       <div className="picCard ">
         <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card2.childImageSharp.fluid} objectFit={'cover'} />
-        <Link to="/WhatWeDo">
+        <Link to="/WhatWeDo#whatWeDo_2">
         <div>
           <h1 className='title'>School Leadership Consultation</h1>
-          <p>{content.card2Text}</p>
         </div>
         </Link>
 
@@ -132,10 +132,9 @@ return(
 
       <div className="picCard ">
         <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card3.childImageSharp.fluid} objectFit={'cover'} />
-        <Link to="/WhatWeDo">
+        <Link to="/WhatWeDo#whatWeDo_3">
         <div>
           <h1 className='title'>Professional Development Workshops</h1>
-          <p>{content.card3Text}</p>
         </div>
         </Link>
       </div>
@@ -144,10 +143,9 @@ return(
 
       <div className="picCard ">
         <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card4.childImageSharp.fluid} objectFit={'cover'} />
-        <Link to="/WhatWeDo">
+        <Link to="/WhatWeDo#whatWeDo_4">
         <div>
           <h1 className='title mha'>Parent Coaching and Training</h1>
-          <p>{content.card4Text}</p>
         </div>
         </Link>
 
