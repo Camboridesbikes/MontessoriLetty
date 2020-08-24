@@ -11,7 +11,7 @@ whatWeDoText: >-
 
   ​\
 
-  While skilled teachers personalize to meet the needs of their individual students,**Applied Montessori** works in partnership with parents, teachers, and school leadership to develop systems and processes that will support you in creating effective learning environments in classrooms and homeschool settings. The outcome of this deep, reflective and practical work is happy and thriving children and families.
+  While skilled teachers personalize to meet the needs of their individual students, **Applied Montessori** works in partnership with parents, teachers, and school leadership to develop systems and processes that will support you in creating effective learning environments in classrooms and homeschool settings. The outcome of this deep, reflective and practical work is happy and thriving children and families.
 mentorCoachText: "Personalized online mentoring on topics such as: lesson
   implementation, classroom management, and effective communication with
   children and parents."
