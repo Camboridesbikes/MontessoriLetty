@@ -3,6 +3,7 @@ import {useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import Img from "gatsby-image/withIEPolyfill"
+import BackgroundImage from "gatsby-background-image"
 export const sharpImage = graphql`
 fragment sharpImage on File {
 childImageSharp{
@@ -46,7 +47,18 @@ const content = data.allFile.edges[0].node.childMarkdownRemark.frontmatter;
 return(
 <>
   <SEO title="Who we are" />
-  <div style={{width: `100%`, position: `relative`}}>
+  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}} fluid={data.ourMission.childImageSharp.fluid} objectPosition="50% 55%">
+  <div
+      style={{ width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .3)`}}>
+      <div className='pg hg tc white' style={{ marginBottom: '1em', maxWidth: '1200px'}}>
+        <h1 style={{textShadow: '0 0 2.5px #000'}}>{content.splashTitle}</h1>
+        <h3 style={{fontSize: `1.2em`, lineHeight: '1.5em', textShadow: '0 0 2.5px #000'}}>
+          {content.splashText}
+        </h3>
+      </div>
+    </div>
+  </BackgroundImage>
+  {/* <div style={{width: `100%`, position: `relative`}}>
     <Img style={{width:`100%`, height: `20em`}} fluid={data.ourMission.childImageSharp.fluid} objectFit={'cover'}
       objectPosition="50% 55%"></Img>
     <div
@@ -58,7 +70,7 @@ return(
         </h3>
       </div>
     </div>
-  </div>
+  </div> */}
   <div className="tc pg">
     <h1 style={{padding: '.5em'}}>Who We Are</h1>
     <div className='phg tp'>

@@ -1,0 +1,21 @@
+@for $i from 1 to 3{
+    .col-#{25 * $i}{
+        width: (25 * $i) * 1% ;
+        min-width: (300 * $i) * 1px;
+        margin-bottom: 2.5em;
+    }
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter {
+    display: flex ;
+    justify-content: center;
+}
+
+
+

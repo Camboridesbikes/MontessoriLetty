@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
 import SEO from "../components/seo"
 import Img from "gatsby-image/withIEPolyfill"
@@ -34,19 +35,19 @@ SchoolLeadership: file(relativePath: { eq:
 ...sharpImage
 }
 allFile(filter: {sourceInstanceName: {eq: "content"}, name: {eq: "whatWeDo"}}) {
-  edges {
-    node {
-      childMarkdownRemark {
-        frontmatter {
-          whatWeDoText
-          mentorCoachText
-          schoolLeadershipText
-          profDevText
-          parentCoachText
-        }
-      }
-    }
-  }
+edges {
+node {
+childMarkdownRemark {
+frontmatter {
+whatWeDoText
+mentorCoachText
+schoolLeadershipText
+profDevText
+parentCoachText
+}
+}
+}
+}
 }
 }
 `);
@@ -57,19 +58,18 @@ return(
 <>
   <SEO title="What We Do" />
   {/* Splash */}
-  <div style={{width: `100%`, position: `relative`}}>
-    <Img style={{width:`100%`, height: `23em`}} fluid={data.WhatWeDo.childImageSharp.fluid} objectFit={'cover'}
-      objectPosition="50% 50%"></Img>
+  <BackgroundImage style={{width:`100%`, backgroundSize: 'cover'}} fluid={data.WhatWeDo.childImageSharp.fluid}>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .3)`}}>
+      style={{height: '100%', width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .3)`}}>
       <div className='phg pt3 hg tc white'>
         <h1>What We Do</h1>
-        <h3 className='w100' style={{fontSize: `1.2em`, lineHeight: '1.5em'}}>
+        <h3 className='w100' style={{fontSize: `1.2em`, lineHeight: '1.5em', textShadow: '0 0 2.5px #000'}}>
           {content.whatWeDoText}
         </h3>
       </div>
     </div>
-  </div>
+  </BackgroundImage>
+  
   {/* green divider */}
   <div style={{ width: `100%`,position: `relative`,}}>
     <div style={{background: `#A7E084`,height: `.681rem`, textAlign: `center`, padding: `.25em`}}>
@@ -77,20 +77,20 @@ return(
   </div>
 
   {/* Online Mentoring and Coaching */}
-  <div style={{width: `100%`, position: `relative`}}>
-    <Img style={{width:`100%`, height: `12em`}} fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}
-      objectFit={'cover'} objectPosition="50% 25%"></Img>
+  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}}
+    fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)` }}>
+      style={{ width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)` }}>
       <div id='whatWeDo_1' className='wg pg hg tc white'>
         <h1>Online Mentoring and Coaching</h1>
       </div>
     </div>
-  </div>
+  </BackgroundImage>
+
   <div className="tc pg">
     <div className='phg tp'>
       <p>
-       {content.mentorCoachText}
+        {content.mentorCoachText}
       </p>
 
     </div>
@@ -98,16 +98,15 @@ return(
   </div>
 
   {/* School Leadership Consultation */}
-  <div style={{width: `100%`, position: `relative`}}>
-    <Img style={{width:`100%`, height: `12em`}} fluid={data.SchoolLeadership.childImageSharp.fluid} objectFit={'cover'}
-      objectPosition="50% 25%"></Img>
+  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}} fluid={data.SchoolLeadership.childImageSharp.fluid}>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .2)`}}>
-      <div id='whatWeDo_1' className='wg pg hg tc white'>
+      style={{ width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .2)`}}>
+      <div id='whatWeDo_2' className='wg pg hg tc white'>
         <h1>School Leadership Consultation</h1>
       </div>
     </div>
-  </div>
+  </BackgroundImage>
+
   <div className="tc pg">
     <div className='phg tp'>
       <p>
@@ -119,16 +118,16 @@ return(
   </div>
 
   {/* Professional Development Workshops */}
-  <div style={{width: `100%`, position: `relative`}}>
-    <Img style={{width:`100%`, height: `12em`}} fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}
-      objectFit={'cover'} objectPosition="50% 25%"></Img>
+  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}}
+    fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
-      <div id='whatWeDo_1' className='wg pg hg tc white'>
+      style={{ width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
+      <div id='whatWeDo_3' className='wg pg hg tc white'>
         <h1>Professional Development Workshops</h1>
       </div>
     </div>
-  </div>
+  </BackgroundImage>
+
   <div className="tc pg">
     <div className='phg tp'>
       <p>
@@ -140,28 +139,29 @@ return(
   </div>
 
   {/* Parent Coaching and Training */}
-  <div style={{width: `100%`, position: `relative`}}>
-    <Img style={{width:`100%`, height: `12em`}} fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}
-      objectFit={'cover'} objectPosition="50% 25%"></Img>
+  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}}
+    fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
     <div
-      style={{position: `absolute`, top: `0`, left: `0`, height: `100%`, width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
-      <div id='whatWeDo_1' className='wg pg hg tc white'>
+      style={{width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
+      <div id='whatWeDo_4' className='wg pg hg tc white'>
         <h1>Parent Coaching and Training</h1>
       </div>
     </div>
-  </div>
+  </BackgroundImage>
+
   <div className="tc pg">
     <div className='phg tp'>
       <p>
-       {content.parentCoachText}
+        {content.parentCoachText}
       </p>
     </div>
-    
+
     <div className='tc'>
-      <br/><hr/><br/>
-        <button>
-          <Link to='/Connect'>Schedule A Consultation</Link></button>
-      </div>
+      <br />
+      <hr /><br />
+      <button>
+        <Link className="button" to='/Connect'>Schedule A Consultation</Link></button>
+    </div>
 
   </div>
 </>
