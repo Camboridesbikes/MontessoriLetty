@@ -84,7 +84,7 @@ return(
               <textarea name='more' rows="4" cols="60" /></div>
           </div>
           
-            <button className="button" type="submit"><strong>Submit</strong></button>
+            <button className="button" type="submit">Submit</button>
           </form>          
           
         </div>
