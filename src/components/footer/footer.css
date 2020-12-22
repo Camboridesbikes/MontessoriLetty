@@ -1,13 +1,13 @@
 .col-25 {
   width: 25%;
   min-width: 300px;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
 .col-50 {
   width: 50%;
   min-width: 600px;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
 .footer {
@@ -18,7 +18,11 @@
 
 .newsletter {
   display: flex;
-  justify-content: center;
+}
+
+.newsletter input {
+  width: 400px;
+  max-width: 400px;
 }
 
 /*# sourceMappingURL=footer.css.map */

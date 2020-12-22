@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem  1.0875rem  0 1.0875rem`,
         textAlign: `center`,
       }}>
-    <h2 style={{ marginBottom: '.5em' }}>
+    <h2 style={{ marginBottom: '1em' }}>
       <Link to="/" style={{
             color: `black`,
             textDecoration: `none`,

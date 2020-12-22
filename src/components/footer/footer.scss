@@ -2,7 +2,7 @@
     .col-#{25 * $i}{
         width: (25 * $i) * 1% ;
         min-width: (300 * $i) * 1px;
-        margin-bottom: 2.5em;
+        margin-bottom: 2em;
     }
 }
 
@@ -14,7 +14,13 @@
 
 .newsletter {
     display: flex ;
-    justify-content: center;
+    // justify-content: center;
+
+}
+
+.newsletter input{
+    width: 400px;
+    max-width: 400px;
 }
 
 
