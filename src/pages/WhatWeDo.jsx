@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
 import SEO from "../components/seo"
-import Img from "gatsby-image/withIEPolyfill"
+// import Img from "gatsby-image/withIEPolyfill"
 
 export const sharpImage = graphql`
 fragment sharpImage on File {
