@@ -1,0 +1,56 @@
+.connect {
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.connect .inner {
+  background-color: #00000095;
+  text-align: center;
+  width: 100%;
+}
+
+.connect .inner .about {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.about p {
+  margin: 1em;
+}
+
+@media screen and (min-width: 769px) {
+  .connect .inner {
+    width: 80%;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .connect .inner .about {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .connect .inner {
+    width: 65%;
+    margin-bottom: 5em;
+  }
+
+  .connect .inner .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+}
+
+/*# sourceMappingURL=connect.css.map */

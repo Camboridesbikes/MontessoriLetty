@@ -5,6 +5,8 @@ import BackgroundImage from "gatsby-background-image"
 import SEO from "../components/seo"
 import Img from "gatsby-image/withIEPolyfill"
 
+import "../styles/pages/connect/connect.css"
+
 export const sharpImage = graphql`
 fragment sharpImage on File {
 childImageSharp{
@@ -31,11 +33,8 @@ Background: file(relativePath: {eq:
 return(
 <>
   <SEO title="Connect with us" />
-  <BackgroundImage className='tc'
-    style={{width: `100%`, backgroundSize: 'cover', display: 'flex', WebkitJustifyContent: 'center'}}
-    fluid={data.Background.childImageSharp.fluid} objectPosition="50% 50%">
-    <div className='tc pg'
-      style={{backgroundColor: `#00000095`, textAlign: `center`,  width: `61.8%`, minWidth: '800px', marginBottom: '5em'}}>
+  <BackgroundImage className='connect' fluid={data.Background.childImageSharp.fluid} objectPosition="50% 50%">
+    <div className='tc pg inner'>
       <div style={{padding: ``, color: `white`}}>
         <h1>Connect With Us</h1>
         <form name="contact" method="POST" data-netlify-true="true" netlify-honeypot="bot-field"
@@ -54,15 +53,14 @@ return(
           </div>
 
           <h2>What Is Your Role?</h2>
-          <div
+          <div className="role"
             style={{display: `flex`, justifyContent: `space-around`, flexWrap: `wrap`, width: '100%', marginBottom: '1em'}}>
             <p><label htmlFor="admin"> <input type="checkbox" name="admin" id="" /> Administrator </label></p>
             <p><label htmlFor="educator"> <input type="checkbox" name="educator" id="" /> Educator </label></p>
             <p><label htmlFor="parent"> <input type="checkbox" name="parent" id="" /> Parent </label></p>
           </div>
           <h2>What Are You Contacting Us About</h2>
-          <div
-            style={{display: `flex`, justifyContent: `space-around`, flexWrap: `wrap`, maxWidth: '900px', padding: '0 100px'}}>
+          <div className="about">
             <p><label htmlFor="mentoring"> <input type="checkbox" name="mentoring" id="" /> Mentoring/Coaching </label>
             </p>
             <p><label htmlFor="leadership"> <input type="checkbox" name="leadership" id="" /> School Leadership </label>
@@ -74,7 +72,11 @@ return(
             <p><label htmlFor="schoolPackage"> <input type="checkbox" name="schoolPackage" id="" /> School Package
               </label></p>
           </div>
-          <div style={{maxWidth: '800px'}}>
+          {/**
+           *  TODO: fix the responsivness 
+           *  FIXME: not re-sizing when becoming smaller
+          */}
+          <div className="more" style={{maxWidth: '800px'}}>
             <div style={{textAlign: 'left', margin: '1em'}}>
               <p>
                 <label htmlFor="more">
@@ -84,7 +86,7 @@ return(
               <textarea name='more' rows="4" cols="60" /></div>
           </div>
           
-            <button className="button" type="submit">Submit</button>
+            <button className="button-alt2" type="submit">Submit</button>
           </form>          
           
         </div>

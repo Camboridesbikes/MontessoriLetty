@@ -159,8 +159,9 @@ return(
     <div className='tc'>
       <br />
       <hr /><br />
-      <button>
-        <Link className="button" to='/Connect'>Schedule A Consultation</Link></button>
+      <button className="button-alt" >
+        <Link to='/Connect'>Schedule A Consultation</Link>
+        </button>
     </div>
 
   </div>

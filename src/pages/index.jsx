@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 
 import Img from "gatsby-image/withIEPolyfill"
+import "../styles/pages/index/index.css"
 
 export const sharpImage = graphql`
 fragment sharpImage on File {
@@ -74,40 +75,38 @@ return(
   * ***FIRST BLOCK***
   * TODO: darken background when mobile-size
   */}
-  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}} fluid={data.splash.childImageSharp.fluid}
+  <BackgroundImage className="splash" style={{width: `100%`, backgroundSize: 'cover'}} fluid={data.splash.childImageSharp.fluid}
     objectPosition="50% 35%">
-    <div
-      style={{width: `100%`, padding: `auto`, display: `flex`, flexDirection: `row-reverse`, backgroundColor: `#00000022`,  minHeight: '400px'}}>
-      <div style={{maxWidth: `1000px`, color: `white`, textAlign: `center`, padding: `3rem`}}>
-        <h3 style={{fontSize: '1.8em', textShadow: '0 0 2.5px #000'}}>
+    <div className="inner" >
+      <div >
+        <h1>Welcome to Applied Montessori</h1>
+        <h3>
           {content.splashText}
         </h3>
-        <button>
-          <Link className="button" to='/Connect'>Connect with us</Link></button>
+        <button className="button">
+          <Link  to='/Connect'>Connect with us</Link></button>
       </div>
     </div>
   </BackgroundImage>
-  
+
   {/* NewsLetter Banner */}
   <div style={{ width: `100%`,position: `relative`,}}>
-    <div style={{background: `#A7E084`,height: `2rem`, textAlign: `center`, padding: `.25em`}}>
+    <div style={{background: `#A7E084`,height: `.5rem`, textAlign: `center`, padding: `.25em`}}>
       {/* <p style={{margin: `0`}}>Sign up for the NewsLetter</p> */}
     </div>
   </div>
 
   {/* Who We are block */}
-  <BackgroundImage style={{width: '100%', backgroundSize: 'cover', display: 'flex', WebkitJustifyContent: 'center'}}
-    fluid={data.whoWeAre.childImageSharp.fluid}>
-    <div
-      style={{backgroundColor: `#00000075`, textAlign: `center`, MaxWidth: `80%`, padding: `auto`, marginBottom: '3em'}}>
+  <BackgroundImage className="whoWeAre" fluid={data.whoWeAre.childImageSharp.fluid}>
+    <div className="inner">
       <div style={{padding: `5%`, color: `white`}}>
         <h1>Who We Are</h1>
         <h3 style={{fontSize: '1.5em', lineHeight: `1.5em`, maxWidth: '1000px'}}>{content.whoText}</h3>
-        <button >
-          <Link className="button" to='/WhoWeAre'>Learn More</Link></button>
+        <button className="button">
+          <Link  to='/WhoWeAre'>Learn More</Link></button>
       </div>
     </div>
-  </BackgroundImage>s
+  </BackgroundImage>
   {/* <div style={{width: `100%`, position: `relative`}}>
     <Img style={{width:`100%`, height: `32em`}} fluid={data.whoWeAre.childImageSharp.fluid} objectFit={'cover'}
       objectPosition="50% 45%"></Img>
@@ -123,49 +122,46 @@ return(
   </div> */}
 
   {/* block of cards */}
-  <div className="phg">
-    <div className="phg" style={{display: `flex`, flexWrap: `wrap`, justifyContent: `center`, textAlign: `center`}}>
+  {/**
+  * TODO: change the conatining div into a cardBlck clas and manipulate in sass
+  */}
+  <div className="">
+    <div className="CardDeck"
+      style={{display: `flex`, flexWrap: `wrap`, justifyContent: `center`, textAlign: `center`}}>
 
-      <div className="picCard ">
-        <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card1.childImageSharp.fluid} objectFit={'cover'} />
+      <BackgroundImage className="picCard" fluid={data.card1.childImageSharp.fluid}>
         <Link to="/WhatWeDo#whatWeDo_1">
         <div>
           <h1 className='title'>Online Mentoring and Coaching</h1>
         </div>
         </Link>
+      </BackgroundImage>
 
-      </div>
-
-      <div className="picCard ">
-        <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card2.childImageSharp.fluid} objectFit={'cover'} />
+      <BackgroundImage className="picCard" fluid={data.card2.childImageSharp.fluid}>
         <Link to="/WhatWeDo#whatWeDo_2">
         <div>
           <h1 className='title'>School Leadership Consultation</h1>
         </div>
         </Link>
+      </BackgroundImage>
 
-      </div>
-
-      <div className="picCard ">
-        <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card3.childImageSharp.fluid} objectFit={'cover'} />
+      <BackgroundImage className="picCard" fluid={data.card3.childImageSharp.fluid}>
         <Link to="/WhatWeDo#whatWeDo_3">
         <div>
           <h1 className='title'>Professional Development Workshops</h1>
         </div>
         </Link>
-      </div>
+      </BackgroundImage>
 
-
-
-      <div className="picCard ">
-        <Img style={{width: `100%`, paddingTop: `100%`}} fluid={data.card4.childImageSharp.fluid} objectFit={'cover'} />
+      <BackgroundImage className="picCard" fluid={data.card4.childImageSharp.fluid}>
         <Link to="/WhatWeDo#whatWeDo_4">
         <div>
-          <h1 className='title mha'>Parent Coaching and Training</h1>
+          <h1 className='title'>Parent Coaching and Training</h1>
         </div>
         </Link>
+      </BackgroundImage>
 
-      </div>
+
     </div>
   </div>
 </>

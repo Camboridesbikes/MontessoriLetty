@@ -1,0 +1,64 @@
+@use "../../breakpoints" as *;
+
+.connect{
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    display: flex;  
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.connect .inner{
+    background-color: #00000095; 
+    text-align: center;  
+    width: 100%;
+    //width: 61.8%; 
+    //min-width: 800px; 
+    
+}
+ .connect .inner .about{
+    display: flex; 
+    flex-direction: column;
+    align-items: baseline;
+    //justify-content: space-around; 
+    //flex-wrap: wrap;
+ }
+
+ .about p{
+     margin: 1em;
+ }
+
+ @include md(){
+     .connect .inner{
+        width: 80%;
+        margin-bottom: 5em;
+        display: flex;
+        justify-content: center;
+     }
+
+    .connect .inner .about{
+        display: flex; 
+        //flex-direction: column;
+        //align-items: baseline;
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+        max-width: 900px; 
+     }
+ }
+
+ @include lg(){
+    .connect .inner{
+       width: 65%;
+       margin-bottom: 5em;
+    }
+
+   .connect .inner .about{
+       display: flex; 
+       flex-direction: row;
+       //align-items: baseline;
+       justify-content: space-around; 
+       flex-wrap: wrap; 
+       max-width: 900px; 
+    }
+}

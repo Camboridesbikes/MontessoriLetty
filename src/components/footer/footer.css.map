@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["footer.scss"],"names":[],"mappings":"AACI;EACI;EACA;EACA;;;AAHJ;EACI;EACA;EACA;;;AAIR;EACI;EACA;EACA;;;AAGJ;EACI;;;AAKJ;EACI;EACA","file":"footer.css"}
+{"version":3,"sourceRoot":"","sources":["footer.scss","../../styles/_breakpoints.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;EACD;;;AAIH;EACI;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AChDA;EDoDA;IACI;;;AC/CJ;EDoDA;IACI;IACA;;;EAGJ;IACI;IACA","file":"footer.css"}

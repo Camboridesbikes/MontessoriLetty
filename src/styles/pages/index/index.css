@@ -1,0 +1,157 @@
+html {
+  font-size: x-small;
+}
+
+.splash {
+  transition: font-size 0.2s linear;
+}
+
+.splash::after {
+  background-color: #00000022;
+}
+
+.splash .inner {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  display: flex;
+  background-color: #00000035;
+  align-items: center;
+  padding: 6.18%;
+  padding-bottom: 15%;
+}
+
+.splash .inner div {
+  background-color: #ffffff10;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 6.18%;
+  text-shadow: 0px 0px 15px #000;
+}
+
+.splash .inner h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.7em;
+}
+
+.splash .inner button {
+  font-size: 1.9em;
+}
+
+.whoWeAre {
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.whoWeAre .inner {
+  background-color: #00000075;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  text-shadow: 0px 0px 10px #000;
+}
+
+@media screen and (min-width: 769px) {
+  html {
+    font-size: small;
+  }
+
+  .whoWeAre .inner {
+    max-width: 80%;
+    padding: auto;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: medium;
+  }
+
+  .splash .inner {
+    flex-direction: row-reverse;
+    background-color: #00000030;
+  }
+
+  .splash .inner div {
+    width: 60%;
+    font-size: 0.9em;
+  }
+
+  .whoWeAre .inner {
+    max-width: 65%;
+    padding: auto;
+    margin-bottom: 10%;
+  }
+}
+.CardDeck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 70%;
+}
+
+.picCard {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  display: flex;
+}
+
+.picCard a {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+div.picCard div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: white;
+  /* background-color: #00000035; */
+  background-color: #00000090;
+  transition-duration: 1s;
+  transition: font-size 0s liner 1s, background-color 1s, scale 1s linear;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  /* width: fit-content; */
+}
+
+div.picCard div .title {
+  font-size: 2.5em;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: color 1s, linear;
+}
+
+div.picCard div:hover {
+  /* background-color: #00000080; */
+  background-color: #00000035;
+}
+
+@media screen and (min-width: 481px) {
+  .CardDeck {
+    padding: 1.61%;
+  }
+
+  .picCard {
+    margin: 1.61%;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .CardDeck {
+    font-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
