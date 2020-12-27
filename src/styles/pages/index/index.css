@@ -102,6 +102,7 @@ html {
   position: relative;
   background-size: cover;
   display: flex;
+  transition: all 0.2s linear;
 }
 
 .picCard a {
@@ -131,6 +132,10 @@ div.picCard div .title {
   padding-left: 5%;
   padding-right: 5%;
   transition: color 1s, linear;
+}
+
+div.picCard:hover {
+  transform: scale(1.1);
 }
 
 div.picCard div:hover {

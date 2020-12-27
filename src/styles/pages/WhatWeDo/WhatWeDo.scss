@@ -1,0 +1,58 @@
+@use '../../breakpoints' as *;
+
+.sbs-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sbs-bg{
+    width: 100%;
+    background-size: cover;
+}
+
+.sbs-bg-inner{
+    width: 100%;
+    height: 100%;
+    padding: 6.18%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, .30);
+    text-align: center;
+    color: white;
+   
+
+}
+
+.sbs-inner{
+    padding: 6.18%;
+}
+
+.sbs-container p{
+    font-size: 140%;
+    line-height: 1.6em;
+    font-weight: 600;
+}
+
+@include md(){
+    .sbs-container{
+        flex-direction: row;
+    }
+
+    .sbs-container:nth-of-type(2n){
+        flex-direction: row-reverse;
+    }
+
+    .sbs-bg{
+        width: 50%;
+    }
+
+    .sbs-bg-inner{
+        padding: 15%;
+    }
+
+    .sbs-inner{
+        width: 50%;
+        
+    }
+}

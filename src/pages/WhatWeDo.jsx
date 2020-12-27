@@ -5,6 +5,8 @@ import BackgroundImage from 'gatsby-background-image'
 import SEO from "../components/seo"
 // import Img from "gatsby-image/withIEPolyfill"
 
+import "../styles/pages/WhatWeDo/WhatWeDo.css"
+
 export const sharpImage = graphql`
 fragment sharpImage on File {
 childImageSharp{
@@ -58,7 +60,8 @@ return(
 <>
   <SEO title="What We Do" />
   {/* Splash */}
-  <BackgroundImage style={{width:`100%`, backgroundSize: 'cover'}} fluid={data.WhatWeDo.childImageSharp.fluid}>
+  <BackgroundImage className="splash" style={{width:`100%`, backgroundSize: 'cover'}}
+    fluid={data.WhatWeDo.childImageSharp.fluid}>
     <div
       style={{height: '100%', width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .3)`}}>
       <div className='phg pt3 hg tc white'>
@@ -69,7 +72,7 @@ return(
       </div>
     </div>
   </BackgroundImage>
-  
+
   {/* green divider */}
   <div style={{ width: `100%`,position: `relative`,}}>
     <div style={{background: `#A7E084`,height: `.681rem`, textAlign: `center`, padding: `.25em`}}>
@@ -77,94 +80,76 @@ return(
   </div>
 
   {/* Online Mentoring and Coaching */}
-  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}}
-    fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
-    <div
-      style={{ width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)` }}>
-      <div id='whatWeDo_1' className='wg pg hg tc white'>
+  <div className='sbs-container'>
+    <BackgroundImage className='sbs-bg' fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
+      <div id='whatWeDo_1' className='sbs-bg-inner'>
         <h1>Online Mentoring and Coaching</h1>
       </div>
-    </div>
-  </BackgroundImage>
+    </BackgroundImage>
 
-  <div className="tc pg">
-    <div className='phg tp'>
+    <div className="sbs-inner">
       <p>
         {content.mentorCoachText}
       </p>
-
     </div>
-
   </div>
+
 
   {/* School Leadership Consultation */}
-  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}} fluid={data.SchoolLeadership.childImageSharp.fluid}>
-    <div
-      style={{ width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .2)`}}>
-      <div id='whatWeDo_2' className='wg pg hg tc white'>
+  <div className="sbs-container">
+    <BackgroundImage className='sbs-bg' fluid={data.SchoolLeadership.childImageSharp.fluid}>
+      <div id='whatWeDo_2' className='sbs-bg-inner'>
         <h1>School Leadership Consultation</h1>
       </div>
-    </div>
-  </BackgroundImage>
+    </BackgroundImage>
 
-  <div className="tc pg">
-    <div className='phg tp'>
+    <div className="sbs-inner">
       <p>
-        {content.mentorCoachText}
+        {content.schoolLeadershipText}
       </p>
-
     </div>
-
   </div>
 
+
   {/* Professional Development Workshops */}
-  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}}
-    fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
-    <div
-      style={{ width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
-      <div id='whatWeDo_3' className='wg pg hg tc white'>
+  <div className="sbs-container">
+    <BackgroundImage className='sbs-bg' fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
+      <div id='whatWeDo_3' className='sbs-bg-inner'>
         <h1>Professional Development Workshops</h1>
       </div>
-    </div>
-  </BackgroundImage>
+    </BackgroundImage>
 
-  <div className="tc pg">
-    <div className='phg tp'>
+    <div className="sbs-inner">
       <p>
         {content.profDevText}
       </p>
-
     </div>
-
   </div>
 
+
   {/* Parent Coaching and Training */}
-  <BackgroundImage style={{width: `100%`, backgroundSize: 'cover'}}
-    fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
-    <div
-      style={{width: `100%`, padding: `auto`, display: `flex`, justifyContent: 'center', alignContent: 'center', backgroundColor: `rgba(0, 0, 0, .15)`}}>
-      <div id='whatWeDo_4' className='wg pg hg tc white'>
+  <div className="sbs-container">
+    <BackgroundImage className='sbs-bg' fluid={data.OnlineMentoringCoaching.childImageSharp.fluid}>
+      <div id='whatWeDo_4' className='sbs-bg-inner'>
         <h1>Parent Coaching and Training</h1>
       </div>
-    </div>
-  </BackgroundImage>
+    </BackgroundImage>
 
-  <div className="tc pg">
-    <div className='phg tp'>
+    <div className="sbs-inner">
       <p>
         {content.parentCoachText}
       </p>
     </div>
-
-    <div className='tc'>
-      <br />
-      <hr /><br />
-      <button className="button-alt" >
-        <Link to='/Connect'>Schedule A Consultation</Link>
-        </button>
-    </div>
-
   </div>
+
+  <div className='tc'>
+    <br />
+    <hr /><br />
+    <button className="button-alt">
+      <Link to='/Connect'>Schedule A Consultation</Link>
+    </button>
+  </div>
+
 </>
 )
 

@@ -116,6 +116,7 @@ html{
     position: relative;
    background-size: cover;
    display: flex;
+   transition:all .2s linear;
 
 }
 
@@ -150,9 +151,15 @@ div.picCard div .title {
     transition: color 1s, linear;
 }
 
+div.picCard:hover{
+    
+    transform: scale(1.1);
+}
+
 div.picCard div:hover {
     /* background-color: #00000080; */
     background-color: #00000035;
+    
 }
 
 @include sm(){

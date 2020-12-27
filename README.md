@@ -1,7 +1,8 @@
 <!--  -->
 ## TODO:
-  -move styles form react comps to css
-  -Add media queries to make resposive
+  -move styles from react comps to css ***started
+  -Add media queries to make resposive ***started
+  -enlarge ```<p>```text
 
 ## 🚀 Quick start
 

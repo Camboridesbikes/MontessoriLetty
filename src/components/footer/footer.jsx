@@ -28,7 +28,7 @@ return(
                 </p>
                 <div > <label htmlFor="name">Name: <input type="text" name='name' /></label>
                     <label htmlFor="email">Email: <input type="email" name='email' /></label>
-                    <button className="button-alt2" type="submit">Submit</button>
+                    <button className="button" type="submit">Submit</button>
                 </div>
                 <div style={{width: "50%"}}>
                     
